@@ -1,0 +1,53 @@
+{
+    "LIGHT": {
+        "SIDEBAR":{
+            "BACKGROUND": {
+
+            },
+            "ITEMS":{
+
+            }
+
+        },
+        "DASHBOARD": {
+            "BACKGROUND": {
+
+            }
+        }
+
+    },
+    "DARK": {
+        "SIDEBAR":{
+            "BACKGROUND": {
+
+            },
+            "ITEMS":{
+
+            }
+            
+        },
+        "DASHBOARD": {
+            "BACKGROUND": {
+
+            }
+        }
+
+    },
+    "COLORFULL": {
+        "SIDEBAR":{
+            "BACKGROUND": {
+
+            },
+            "ITEMS":{
+
+            }
+            
+        },
+        "DASHBOARD": {
+            "BACKGROUND": {
+
+            }
+        }
+
+    }
+}

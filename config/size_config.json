@@ -1,0 +1,24 @@
+{
+    "GENERAL":{
+        "RADIUS": {
+            "NONE": 0,
+            "SMALL": 4,
+            "MEDIUM": 6,
+            "LARGE": 8
+        }
+    },
+    "SIDEBAR":{
+        "WIDTH_RATIO": "0.05",
+        "HEIGHT_RATIO": "1",
+        "RADIUS": "NONE",
+        "ITEMS":{
+            "SPACING_RATIO": "0.1",
+            "RADIUS": "MEDIUM",
+            "TEXTSIZE_RATIO": "0.4",
+            "ICONSIZE_RATIO": "0.8"
+        }
+    },
+    "DASHBORAD": {
+
+    }
+}

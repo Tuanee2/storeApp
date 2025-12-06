@@ -1,0 +1,5 @@
+#ifndef CUSTOMERCORE_H
+#define CUSTOMERCORE_H
+
+
+#endif // CUSTOMERCORE_H
