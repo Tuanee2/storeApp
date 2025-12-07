@@ -15,4 +15,10 @@ Window {
         height: parent.height
     }
 
+    Rectangle {
+        id: mainContent
+
+    }
+
+
 }

@@ -25,6 +25,6 @@ struct Command {
     CommandAction action;
     ResourceType reSrcType;
 
-}
+};
 
 #endif // COMMAND_H

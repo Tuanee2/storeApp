@@ -1,5 +1,6 @@
 #include <QGuiApplication>
 #include <QQmlApplicationEngine>
+#include <QThread>
 #include "configManager/sizeconfigmanager.h"
 #include "configManager/colorconfigmanager.h"
 
@@ -18,6 +19,7 @@ int main(int argc, char *argv[])
 
 
     // For DBthread
+    QThread *DBThread = new QThread();
 
 
     // UIThread is main thread
