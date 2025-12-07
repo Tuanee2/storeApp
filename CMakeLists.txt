@@ -4,9 +4,13 @@ project(storeApp VERSION 0.1 LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-find_package(Qt6 REQUIRED COMPONENTS Quick)
+find_package(Qt6 REQUIRED COMPONENTS Quick Sql)
 
 qt_standard_project_setup(REQUIRES 6.5)
+
+set(CMAKE_AUTORCC ON)
+set(CMAKE_AUTOUIC ON)
+set(CMAKE_AUTOMOC ON)
 
 
 qt_add_executable(appstoreApp
@@ -27,6 +31,16 @@ qt_add_qml_module(appstoreApp
         SOURCES core/batchcore.h core/batchcore.cpp
         SOURCES core/productcore.h core/productcore.cpp
         SOURCES core/ordercore.h core/ordercore.cpp
+        SOURCES DBThread/layer_1/database.h DBThread/layer_1/database.cpp
+        SOURCES DBThread/layer_4/dbworker.h DBThread/layer_4/dbworker.cpp
+        SOURCES DBThread/layer_3/customerservice.h DBThread/layer_3/customerservice.cpp
+        SOURCES DBThread/layer_3/productservice.h DBThread/layer_3/productservice.cpp
+        SOURCES DBThread/layer_3/orderservice.h DBThread/layer_3/orderservice.cpp
+        SOURCES DBThread/layer_3/batchservice.h DBThread/layer_3/batchservice.cpp
+        SOURCES DBThread/layer_2/customerrepo.h DBThread/layer_2/customerrepo.cpp
+        SOURCES DBThread/layer_2/orderrepo.h DBThread/layer_2/orderrepo.cpp
+        SOURCES DBThread/layer_2/productrepo.h DBThread/layer_2/productrepo.cpp
+        SOURCES DBThread/layer_2/batchrepo.h DBThread/layer_2/batchrepo.cpp
 )
 
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.
@@ -41,7 +55,7 @@ set_target_properties(appstoreApp PROPERTIES
 )
 
 target_link_libraries(appstoreApp
-    PRIVATE Qt6::Quick
+    PRIVATE Qt6::Quick Qt6::Sql
 )
 
 include(GNUInstallDirs)

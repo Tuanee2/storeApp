@@ -12,7 +12,7 @@ enum class DebtType : uint8_t{
 struct OrderCore {
     QString id;
     QString saleDate;
-
+    std::pair<QString, double> paymentHistory;
     double totalPrice;
 
     QString note;

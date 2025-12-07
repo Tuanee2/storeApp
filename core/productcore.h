@@ -9,7 +9,6 @@ struct ProductCore {
     QString id;
     QString name;
     double price;
-    std::vector<BatchCore> batches;
     QString note;
 };
 
